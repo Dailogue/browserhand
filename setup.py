@@ -7,14 +7,13 @@ setup(
     name="browserhand",
     version="0.1.0",
     author="BrowserHand Team",
-    author_email="info@browserhand.ai",
+    author_email="hangerneil43@gmail.com",
     description="AI-powered browser automation with natural language",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/browserhand/browserhand",
     project_urls={
         "Bug Tracker": "https://github.com/browserhand/browserhand/issues",
-        "Documentation": "https://browserhand.ai/docs",
     },
     classifiers=[
         "Programming Language :: Python :: 3",

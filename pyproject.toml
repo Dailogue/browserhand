@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browserhand"
+version = "0.1.0"
+authors = [
+    {name = "BrowserHand Team", email = "hangerneil43@gmail.com"},
+]
+description = "AI-powered browser automation with natural language"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+dependencies = [
+    "playwright>=1.20.0",
+    "langchain-core>=0.0.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/browserhand/browserhand"
+"Bug Tracker" = "https://github.com/browserhand/browserhand/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=22.1.0",
+    "flake8>=4.0.1",
+]
+azure = [
+    "langchain-openai>=0.0.1",
+]
+openai = [
+    "langchain-openai>=0.0.1",
+]
+anthropic = [
+    "langchain-anthropic>=0.0.1",
+]
+all = [
+    "langchain-openai>=0.0.1",
+    "langchain-anthropic>=0.0.1",
+]
+
+[project.scripts]
+browserhand = "browserhand.cli:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py37"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
