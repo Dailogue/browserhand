@@ -24,8 +24,7 @@ setup(
         "Topic :: Software Development :: Testing",
         "Topic :: Internet :: WWW/HTTP :: Browsers",
     ],
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    packages=find_packages(),
     python_requires=">=3.7",
     install_requires=[
         "playwright>=1.20.0",
