@@ -5,15 +5,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="browserhand",
-    version="0.1.0",
+    version="0.1.1",
     author="BrowserHand Team",
     author_email="hangerneil43@gmail.com",
     description="AI-powered browser automation with natural language",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/browserhand/browserhand",
+    url="https://github.com/Dailogue/browserhand",
     project_urls={
-        "Bug Tracker": "https://github.com/browserhand/browserhand/issues",
+        "Bug Tracker": "https://github.com/Dailogue/browserhand/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
