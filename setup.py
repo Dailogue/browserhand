@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="browserhand",
-    version="0.1.1",
+    version="0.1.2",
     author="BrowserHand Team",
     author_email="hangerneil43@gmail.com",
     description="AI-powered browser automation with natural language",
